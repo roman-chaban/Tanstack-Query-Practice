@@ -1,0 +1,48 @@
+.taskList {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.taskList > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.taskList > li:hover {
+    transform: scale(1.02);
+    background-color: #f1f1f1;
+}
+
+.taskList > li:active {
+    transform: scale(0.98);
+    background-color: #ececec;
+}
+
+.taskList > li > h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.taskList > li.completed {
+    background-color: #e7ffe7;
+    border-color: #a5d6a7;
+}
+
+.taskList > li.completed > h4 {
+    text-decoration: line-through;
+    color: #666;
+}
