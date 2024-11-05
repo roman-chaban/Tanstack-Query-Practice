@@ -46,3 +46,26 @@
     text-decoration: line-through;
     color: #666;
 }
+
+.nextButton,
+.prevButton {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 14px;
+    border: none;
+    background: lightblue;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.prevButton {
+    margin-inline-end: 1rem;
+}
+
+.paginationButtons {
+    display: flex;
+    align-items: center;
+    margin-block-start: 2rem;
+}
